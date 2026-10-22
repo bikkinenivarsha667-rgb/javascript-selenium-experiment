@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JavaScript Program</title>
+</head>
+<body>
+    <h2>JavaScript Increment Test</h2>
+
+    <p id="output">0</p>
+    <button id="increment-button">Increment</button>
+
+    <script>
+        const output = document.getElementById("output");
+        const incrementButton =
+            document.getElementById("increment-button");
+
+        let count = 0;
+
+        incrementButton.addEventListener("click", function () {
+            count += 1;
+            output.textContent = count;
+        });
+    </script>
+</body>
+</html>
